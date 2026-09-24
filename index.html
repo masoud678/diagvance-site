@@ -436,6 +436,14 @@
         align-items: flex-start;
       }
     }
+    section[id] { scroll-margin-top: 90px; }
+
+@media (max-width: 900px) {
+  .nav-links { display: flex; gap: 16px; font-size: 0.85rem; }
+  .nav-links a:not([href="#live-demo"]) { display: none; }
+  #live-demo iframe { height: 600px !important; }
+  #contactForm > div { grid-template-columns: 1fr !important; }
+}
   </style>
 </head>
 
@@ -670,7 +678,7 @@
 
           <a
             href="https://masoud678.github.io/AI-HVAC-Diagnostic-Copilot/"
-            target="_blank"
+            target="_blank" rel="noopener"
           >
             View Live Demo →
           </a>
@@ -690,7 +698,7 @@
 
           <a
             href="https://github.com/masoud678/HVAC-fault-detection"
-            target="_blank"
+            target="_blank" rel="noopener"
           >
             View Project →
           </a>
@@ -709,7 +717,7 @@
 
           <a
             href="https://github.com/masoud678/heat-pump-diagnostic-trainer"
-            target="_blank"
+            target="_blank" rel="noopener"
           >
             View Project →
           </a>
@@ -760,7 +768,7 @@
     <div style="margin-top:20px;">
       <a
         href="https://masoud678.github.io/AI-HVAC-Diagnostic-Copilot/"
-        target="_blank"
+        target="_blank" rel="noopener"
         class="btn btn-secondary"
       >
         Open Full Screen
