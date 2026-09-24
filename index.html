@@ -452,7 +452,7 @@
         <a href="#projects">Projects</a>
       </div>
 
-      <a href="mailto:masferi2020@gmail.com" class="btn btn-primary">
+      <a href="#contact-form" class="btn btn-primary">
         Get in Touch
       </a>
     </nav>
@@ -719,33 +719,100 @@
   </section>
 
 
-  <section class="cta">
-    <div class="container">
+<section class="cta" id="contact-form">
+  <div class="container">
 
-      <div class="cta-box">
+    <div class="cta-box" style="display:block;">
 
-        <div>
-          <div class="section-label">Contact</div>
+      <div style="margin-bottom:30px;">
+        <div class="section-label">Contact</div>
 
-          <h2>Start With the Problem.</h2>
+        <h2>Start With the Problem.</h2>
 
-          <p>
-            Tell us what you are trying to diagnose, monitor,
-            automate, or improve.
-          </p>
-        </div>
-
-        <a
-          href="mailto:masferi2020@gmail.com"
-          class="btn btn-primary"
-        >
-          Get in Touch
-        </a>
-
+        <p>
+          Tell us what you are trying to diagnose, monitor,
+          automate, or improve.
+        </p>
       </div>
 
+      <form action="https://formspree.io/f/mnpnvekl" method="POST">
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            style="padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;"
+          >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            style="padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;"
+          >
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            style="padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;"
+          >
+
+          <input
+            type="text"
+            name="company"
+            placeholder="Company"
+            style="padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;"
+          >
+
+        </div>
+
+        <select
+          name="projectType"
+          style="width:100%;margin-top:15px;padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;"
+        >
+          <option value="">Select Project Type</option>
+          <option>HVAC Diagnostics</option>
+          <option>Fault Detection</option>
+          <option>Remote Monitoring</option>
+          <option>AI / Automation Workflow</option>
+          <option>IoT / Sensor Project</option>
+          <option>Technical Collaboration</option>
+          <option>Other</option>
+        </select>
+
+        <textarea
+          name="message"
+          placeholder="Tell us about your project or problem..."
+          required
+          rows="6"
+          style="width:100%;margin-top:15px;padding:15px;border-radius:10px;border:1px solid #333;background:#0b0b0b;color:white;resize:vertical;"
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Diagvance Website Inquiry"
+        >
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="margin-top:18px;"
+        >
+          Send Message
+        </button>
+
+      </form>
+
     </div>
-  </section>
+
+  </div>
+</section>
 
 </main>
 
